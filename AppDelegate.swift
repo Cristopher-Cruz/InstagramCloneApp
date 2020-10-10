@@ -10,18 +10,16 @@ import Parse
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-    // AppDelegate.swift
-    private func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-      let parseConfig = ParseClientConfiguration {
-          $0.applicationId = "BCrUQVkk80pCdeImSXoKXL5ZCtyyEZwbN7mAb11f"
-          $0.clientKey = "rWFPEbTs7UzkaVsIXnQ4qmmr9oWqwXfiiJehtIZu"
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        
+          let parseConfig = ParseClientConfiguration {
+          $0.applicationId = "xksHvEWXY5LPO06twTSOJwI9mhMlo2k28FXNTqv3"
+          $0.clientKey = "HsZsSZewgGrTnByaGRXrkH48etTH6SFfMEUzNtqm"
           $0.server = "https://parseapi.back4app.com"
       }
       Parse.initialize(with: parseConfig)
         return true
-    }
-   
+    };
         
         // --- end copy
 
@@ -44,4 +42,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-
